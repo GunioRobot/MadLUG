@@ -287,7 +287,7 @@ function template_preprocess_draggableviews_view_draggabletable_form($vars) {
 
   // Keep the already created form elements "in mind". We'll need them later when we theme the view.
   $style_plugin->view->form_elements = &$vars['form']['rows'];
-  
+
   $vars['view'] = theme($style_plugin->theme_functions(), $style_plugin->view, $style_plugin->options, $style_plugin->view->result, '');
 
   // Don't render the submit form..

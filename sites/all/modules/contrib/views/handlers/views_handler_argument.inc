@@ -714,7 +714,7 @@ class views_handler_argument extends views_handler {
     if (isset($this->argument)) {
       return $this->argument;
     }
-    
+
     // Otherwise, we have to pretend to process ourself to find the value.
     $value = NULL;
     // Find the position of this argument within the view.

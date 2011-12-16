@@ -170,7 +170,7 @@ msgstr "De tekst die gebruikt dient te worden voor aliassen voor RSS feeds. Voor
 
 #: pathauto.admin.inc:335
 msgid "You are using the token [%token] which is not valid within the scope of tokens where you are using it."
-msgstr "U gebruikt de token [%token], welk gebruik hier binnen dit kader niet geldig is." 
+msgstr "U gebruikt de token [%token], welk gebruik hier binnen dit kader niet geldig is."
 
 #: pathauto.admin.inc:343
 msgid "You are using the token [%token] which has a -raw companion available [%raw_token]. For Pathauto patterns you should use the -raw version of tokens unless you really know what you are doing. See the <a href=\"@pathauto-help\">Pathauto help</a> for more details."
@@ -667,7 +667,7 @@ msgstr "pathauto"
 msgid "Provides a mechanism for modules to automatically generate aliases for the content they manage."
 msgstr "Verschaft een mechanisme voor modules voor het automatisch aanmaken van aliassen voor de inhoud die zij beheren."
 
-# Toevoegingen (buiten het standaardbestand pathauto.pot): 
+# Toevoegingen (buiten het standaardbestand pathauto.pot):
 
 #~ msgid "[eventyyyy]"
 #~ msgstr "[eventyyyy]"

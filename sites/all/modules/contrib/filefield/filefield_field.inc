@@ -183,10 +183,10 @@ function filefield_field_update($node, $field, &$items, $teaser, $page) {
   // On new revisions, old files are always maintained in the previous revision.
   if ($node->is_new || !empty($node->revision) || !empty($node->skip_filefield_delete)) {
     return;
-  } 
+  }
 
   // Delete items from original node.
-  $orig = node_load($node->nid); 
+  $orig = node_load($node->nid);
   // If there are, figure out which ones must go.
   if (!empty($orig->$field['field_name'])) {
     foreach ($orig->$field['field_name'] as $oitem) {
@@ -194,7 +194,7 @@ function filefield_field_update($node, $field, &$items, $teaser, $page) {
         // For hook_file_references, remember that this is being deleted.
         $oitem['field_name'] = $field['field_name'];
         $oitem['delete_vid'] = $orig->vid;
-        filefield_field_delete_file($oitem, $field); 
+        filefield_field_delete_file($oitem, $field);
       }
     }
   }

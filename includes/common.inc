@@ -2688,7 +2688,7 @@ function page_set_cache() {
         'created' => $_SERVER['REQUEST_TIME'],
         'headers' => array(),
       );
-    
+
       // Restore preferred header names based on the lower-case names returned
       // by drupal_get_header().
       $header_names = _drupal_set_preferred_header_name();

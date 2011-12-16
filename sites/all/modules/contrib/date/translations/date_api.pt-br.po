@@ -275,11 +275,11 @@ msgstr "o módulo date não pode ser atualizado até que o Views seja atualizado
 msgid "date.module has updates, but cannot be updated until views.module is updated first."
 msgstr "data.module tem atualizações, mas não pode ser atualizado sem que o módulo views seja atualizado antes."
 
-#: (duplicate) date_api.install:234 
+#: (duplicate) date_api.install:234
 msgid "The Date API module requires the <a href=\"@link\">Date PHP4 module</a> for PHP versions less than 5.2."
 msgstr "O módulo Date API requer o <a href=\"@link\">módulo Date PHP4</a> para versões do PHP anteriores a 5.2."
 
-#: (duplicate) date_api.install:238 
+#: (duplicate) date_api.install:238
 msgid "Date API requirements"
 msgstr "Requisitos do Date API"
 

@@ -148,63 +148,63 @@ msgstr "ImageMagick a renvoyé une erreur : %error"
 msgid "imageapi_imagemagick"
 msgstr "imageapi_imagemagick"
 
-#: (duplicate) imageapi.install:23 
+#: (duplicate) imageapi.install:23
 msgid "ImageAPI Toolkit"
 msgstr "Boîte à outils ImageAPI"
 
-#: (duplicate) imageapi.install:24 
+#: (duplicate) imageapi.install:24
 msgid "No ImageAPI toolkits available"
 msgstr "Aucune boîte à outils ImageAPI n'est disponible"
 
-#: (duplicate) imageapi.install:26 
+#: (duplicate) imageapi.install:26
 msgid "ImageAPI requires a Toolkit such as ImageAPI GD or ImageAPI ImageMagick to function. Goto !modules and enable one of them."
 msgstr "ImageAPI nécessite une boîte à outils comme GD ou ImageMagick pour fonctionner. Rendez-vous sur !modules et activez l'un de ces modules."
 
-#: (duplicate) imageapi_gd.install:12 ;23 
+#: (duplicate) imageapi_gd.install:12 ;23
 msgid "GD library"
 msgstr "Bibliothèque GD"
 
-#: (duplicate) imageapi_gd.install:13 ;33 
+#: (duplicate) imageapi_gd.install:13 ;33
 msgid "Not installed"
 msgstr "Non installé"
 
-#: (duplicate) imageapi_gd.install:15 
+#: (duplicate) imageapi_gd.install:15
 msgid "The GD library for PHP is missing or outdated. Please check the <a href=\"@url\">PHP image documentation</a> for information on how to correct this."
 msgstr "La librairie GD pour PHP est manquante ou périmée. Consultez la <a href=\"@url\">documentation PHP associée</a>" pour des informations sur la correction de ce problème."
 
-#: (duplicate) imageapi_gd.install:32 
+#: (duplicate) imageapi_gd.install:32
 msgid "GD !format Support"
 msgstr "Support de !format par GD"
 
-#: (duplicate) imageapi_gd.install:35 
+#: (duplicate) imageapi_gd.install:35
 msgid "PHP GD was not compiled with %format support."
 msgstr "PHP GD n'a pas été compilé avec le support de %format."
 
-#: (duplicate) imageapi_gd.install:44 
+#: (duplicate) imageapi_gd.install:44
 msgid "GD Image Rotation"
 msgstr "Rotation d'images par GD"
 
-#: (duplicate) imageapi_gd.install:45 ;54 
+#: (duplicate) imageapi_gd.install:45 ;54
 msgid "Low Quality / Poor Performance"
 msgstr "Basse qualité / Mauvaise performance"
 
-#: (duplicate) imageapi_gd.install:47 
+#: (duplicate) imageapi_gd.install:47
 msgid "The installed version of PHP GD does not support image rotations. It was probably compiled using the official GD libraries from http://www.libgd.org instead of the GD library bundled with PHP. You should recompile PHP --with-gd using the bundled GD library. See: @url. An implementation of imagerotate in PHP will used in the interim."
 msgstr "La version de PHP GD installée ne supporte pas les rotations d'images. Elle a probablement été compilé en utilisant les bibliothèques GD officielles de http://www.libgd.org au lieu de la bibliothèques GD incluse avec PHP. Vous devriez recompiler PHP en utilisant la bibliothèque GD attachée (--with-gd). Voir: @url. Une implémentation d'imagerotate en PHP sera utilisée en attendant."
 
-#: (duplicate) imageapi_gd.install:53 
+#: (duplicate) imageapi_gd.install:53
 msgid "GD Image Filtering"
 msgstr "Filtres d'images par GD"
 
-#: (duplicate) imageapi_gd.install:56 
+#: (duplicate) imageapi_gd.install:56
 msgid "The installed version of PHP GD does not support image filtering(desaturate, blur, negate, etc). It was probably compiled using the official GD libraries from http://www.libgd.org instead of the GD library bundled with PHP. You should recompile PHP --with-gd using the bundled GD library. See @url. An implementation of imagefilter in PHP will be used in the interim."
 msgstr "La version de PHP GD installée ne supporte pas les filtres d'images (saturation, flou, négatif, etc). Elle a probablement été compilé en utilisant les bibliothèques GD officielles de http://www.libgd.org au lieu de la bibliothèques GD incluse avec PHP. Vous devriez recompiler PHP en utilisant la bibliothèque GD attachée (--with-gd). Voir: @url. Une implémentation d'imagerotate en PHP sera utilisée en attendant."
 
-#: (duplicate) imageapi_gd.install:64 
+#: (duplicate) imageapi_gd.install:64
 msgid "ImageAPI GD Memory Limit"
 msgstr "Limite mémoire de ImageAPI GD"
 
-#: (duplicate) imageapi_gd.install:67 
+#: (duplicate) imageapi_gd.install:67
 msgid "It is highly recommended that you set you PHP memory_limit to 96M to use ImageAPI GD. A 1600x1200 images consumes ~45M of memory when decompressed and there are instances where ImageAPI GD is operating on two decompressed images at once."
 msgstr "Il est recommandé de configurer la memory_limit de PHP à 96M pour utiliser ImageAPI GD. Une image 1600x1200 consomme ~45M de mémoire lors de la décompression et certaines instances de ImageAPI GD opèrent sur deux décompressions d'images en même temps."
 

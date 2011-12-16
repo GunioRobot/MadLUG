@@ -41,16 +41,16 @@ function content_taxonomy_disable() {
 
 /**
  * Implemenation of hook_update_N().
- * 
+ *
  * updates existing fields from 5.x to 6.x
  */
 function content_taxonomy_update_6000() {
   if ($abort = content_check_update('content_taxonomy')) {
     return $abort;
   }
-  
+
   drupal_load('module', 'content');
-  
+
   $ret = array();
 
   // Get the latest cache values and schema.
@@ -65,7 +65,7 @@ function content_taxonomy_update_6000() {
         case 'content_taxonomy':
           $db_info = content_database_info($field);
           $table = $db_info['table'];
-          
+
           //fix old settings first and map them to the new ones.
           $result = db_query("SELECT * FROM {". content_field_tablename() ."} WHERE type = 'content_taxonomy' AND field_name = '%s'", $field['field_name']);
           while ($field = db_fetch_array($result)) {
@@ -76,7 +76,7 @@ function content_taxonomy_update_6000() {
               $field['type_name'] = $type_name;
               $field['columns'] = $db_info['columns'];
               content_alter_schema(array(), $field);
-                
+
               $sql_nodes = db_query("SELECT * FROM {node} WHERE type = '%s'", $type_name);
               while ($node = db_fetch_object($sql_nodes)) {
                 $tids = content_taxonomy_install_terms_by_field($node, $field_settings);
@@ -104,8 +104,8 @@ function content_taxonomy_update_6000() {
             }
             unset($field_settings['save']);
             $field_settings['hide_taxonomy_fields'] = isset($field_settings['hide_taxonomy_fields']) ? $field_settings['hide_taxonomy_fields'] : TRUE;
-            $field_settings['parent'] = $field_settings['tid']; 
-            
+            $field_settings['parent'] = $field_settings['tid'];
+
             $field['global_settings'] = array();
             $setting_names = module_invoke($field['module'], 'field_settings', 'save', $field);
             if (is_array($setting_names)) {
@@ -117,7 +117,7 @@ function content_taxonomy_update_6000() {
             $field['db_columns'] = $field['columns'];
             drupal_write_record(content_field_tablename(), $field, 'field_name');
           }
-          
+
           foreach ($db_info['columns'] as $column => $attributes) {
             $attributes['not null'] = FALSE;
             $column = $attributes['column'];
@@ -139,7 +139,7 @@ function content_taxonomy_update_6000() {
 
 /**
  * Implemenation of hook_update_N().
- * 
+ *
  * Renaming of the Parent setting
  */
 function content_taxonomy_update_6001() {
@@ -167,7 +167,7 @@ function content_taxonomy_update_6001() {
 
 /**
  * Implemenation of hook_update_N().
- * 
+ *
  * Fixing parent setting
  */
 function content_taxonomy_update_6002() {
@@ -194,17 +194,17 @@ function content_taxonomy_install_terms_by_field($node, $field) {
     $result = db_query("SELECT n.tid FROM {term_hierarchy} h, {term_node} n, {term_data} td WHERE
       n.nid = %d AND n.tid = h.tid AND h.parent = %d AND td.tid=n.tid AND td.vid=%d",
      $node->nid, $field['tid'], $field['vid']);
-    
+
     while ($data = db_fetch_array($result)) {
       $terms[$data["tid"]] = $data["tid"];
     }
   }
-  else { 
+  else {
     $result = taxonomy_node_get_terms_by_vocabulary($node, $field['vid']);
     foreach ($result as $tid => $term) {
       $terms[$tid] = $tid;
     }
   }
-  
+
   return $terms;
 }

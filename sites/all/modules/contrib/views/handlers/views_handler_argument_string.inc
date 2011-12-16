@@ -180,7 +180,7 @@ class views_handler_argument_string extends views_handler_argument {
 
   function case_transform($string, $option) {
 		global $multibyte;
-		
+
     switch ($this->options[$option]) {
       default:
         return $string;

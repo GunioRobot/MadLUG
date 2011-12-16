@@ -41,11 +41,11 @@ ALWAYS BACKUP YOUR DATABASE BEFORE UPGRADING!
    everything has been updated to help ensure you don't encounter
    theme-related problems accessing the administration area.
 
-4) Once core is running, upload and install the latest 6.x versions 
+4) Once core is running, upload and install the latest 6.x versions
    of ONLY CCK CORE FILES (the ones in the tarball on the CCK
-   project page). Enable them, then go to update.php and run all 
-   possible updates. DO NOT add any other CCK modules to the 
-   modules folder until the core CCK files are updated and working 
+   project page). Enable them, then go to update.php and run all
+   possible updates. DO NOT add any other CCK modules to the
+   modules folder until the core CCK files are updated and working
    correctly.
 
 5) After updating CCK core modules, you may get messages saying that
@@ -64,7 +64,7 @@ Your database should now be ready to run in CCK version 6.x
 
 ================================================================
 
-The 4.7 to 5.x steps are necessary because of significant changes 
+The 4.7 to 5.x steps are necessary because of significant changes
 in the database structure between the 4.7 and 6.x versions. These changes
 make it extremely difficult to create an automatic upgrade path that
 will work reliably in every possible situation.

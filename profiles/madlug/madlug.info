@@ -3,20 +3,20 @@
 ; -----------------------------------------------------------------------------
 ;                             Introduction
 ; -----------------------------------------------------------------------------
-; Well, this is it! An example Profiler include, showing you how to create your 
-; own Install profiles easily. This file uses Drupal's info format, which is 
-; very similar to PHP's own ini format, however you can use nested arrays in 
+; Well, this is it! An example Profiler include, showing you how to create your
+; own Install profiles easily. This file uses Drupal's info format, which is
+; very similar to PHP's own ini format, however you can use nested arrays in
 ; Drupal's version, which comes in handy for lots of stuff, as you'll see below.
 ;
 ; "Wait, you said this would be easy, what is all this stuff?"
 ;
-; There aren't really any mandatory things here, but if you don't put anything 
+; There aren't really any mandatory things here, but if you don't put anything
 ; in here, your install profile won't do much. :) Don't get overwhelmed, just
 ; go slow and make a few changes here and there till you get the hang of
 ; what's happening.
 ;
-; I've tried to create examples for every piece of functionality below, but to 
-; get a quick breakdown of what's currently available, here's a list of all the 
+; I've tried to create examples for every piece of functionality below, but to
+; get a quick breakdown of what's currently available, here's a list of all the
 ; parent items:
 ;
 ; - modules
@@ -107,7 +107,7 @@ dependencies[] = jquery_ui
 ; Features
 dependencies[] = strongarm
 
-; Imagecache 
+; Imagecache
 dependencies[] = imageapi
 dependencies[] = imageapi_gd
 dependencies[] = imagecache
@@ -134,17 +134,17 @@ dependencies[] = transliteration
 ; -----------------------------------------------------------------------------
 ;                                   Roles
 ; -----------------------------------------------------------------------------
-; Roles are kinda tricky, because the role ids are what makes them work, yet 
-; role ids are given in the order in which the roles are created. For this 
-; reason there are two ways of specifying roles here. You can either just make 
-; an array of roles with the values being the name of the role, or you can make 
-; the value be a nested array and specify the role id manually. Take care when 
+; Roles are kinda tricky, because the role ids are what makes them work, yet
+; role ids are given in the order in which the roles are created. For this
+; reason there are two ways of specifying roles here. You can either just make
+; an array of roles with the values being the name of the role, or you can make
+; the value be a nested array and specify the role id manually. Take care when
 ; using this latter method. Role id's 1 and 2 are reserved in Drupal.
 ;
-; Note how a text key ('admin' & 'publisher') is used in both instances. This 
+; Note how a text key ('admin' & 'publisher') is used in both instances. This
 ; isn't strictly necessary, as you could just empty brackets (roles[] = administrator),
-; however if you create a Sub-Profiler include based off this include, you 
-; wouldn't have a way of overriding these values if you needed to. Best to use 
+; however if you create a Sub-Profiler include based off this include, you
+; wouldn't have a way of overriding these values if you needed to. Best to use
 ; text keys just in case.
 ; -----------------------------------------------------------------------------
 
@@ -161,15 +161,15 @@ dependencies[] = transliteration
 ;                                   Users
 ; -----------------------------------------------------------------------------
 ; Keep in mind when adding users like this that you are proceeding at your own
-; risk. You are writing *in plain text* certain data that could compromise your 
-; site. The password field you specify for any user should be an md5 hashed 
+; risk. You are writing *in plain text* certain data that could compromise your
+; site. The password field you specify for any user should be an md5 hashed
 ; password. I guess that gives you at least one measure of security.
 ;
-; One other thing to note here is that there's this (handy) quirk in Drupal's 
+; One other thing to note here is that there's this (handy) quirk in Drupal's
 ; install API in that you can bypass the configuration form during installation
 ; (where you'd normally set up user 1 credentials and the site name and such).
 ; To do this you need to specify credentials for user 1 and also specify the
-; site name and site email variables (@see Variables below). 
+; site name and site email variables (@see Variables below).
 ; -----------------------------------------------------------------------------
 
 users[superduper][uid]    = 1
@@ -183,16 +183,16 @@ users[superduper][status] = 1
 ;                                Input Formats
 ; -----------------------------------------------------------------------------
 ; Input formats get a little tricky because of these deep nested arrays. The
-; first level of the array is just an internal machine name of the filter. You 
-; can set this to anything you like, but don't leave empty brackets, or you'll 
+; first level of the array is just an internal machine name of the filter. You
+; can set this to anything you like, but don't leave empty brackets, or you'll
 ; be sorry ;).
 ;
-; For each input format you can set name, roles, filters, allowed-html, wysiwyg 
-; (for use with the Wysiwyg API module), and default (set this to 1 on the 
+; For each input format you can set name, roles, filters, allowed-html, wysiwyg
+; (for use with the Wysiwyg API module), and default (set this to 1 on the
 ; input format you want to be the default input format).
 ;
 ; The filters array is a little tricky as you need to know the 'delta' of each
-; input filter, and the module that exposes that filter. Once you know that, 
+; input filter, and the module that exposes that filter. Once you know that,
 ; the structure is then [filters][MODULE][DELTA] = WEIGHT
 ;
 ; The roles key is just a comma separated list of the roles that have access to
@@ -261,11 +261,11 @@ users[superduper][status] = 1
 ;                                  Variables
 ; -----------------------------------------------------------------------------
 ; These variables should be pretty self explanatory, as they are just an array
-; of key value pairs for items in the variable table. Nested arrays also can 
+; of key value pairs for items in the variable table. Nested arrays also can
 ; crop up here, since variables can be arrays.
 ;
-; Also, make note of the site_name and site_mail variables below. These 
-; variables need to be set if you want to bypass the Configuration form during 
+; Also, make note of the site_name and site_mail variables below. These
+; variables need to be set if you want to bypass the Configuration form during
 ; installation (@see Users for more information on how this is accomplished).
 ; -----------------------------------------------------------------------------
 variables[site_name] = MadLUG
@@ -275,8 +275,8 @@ variables[site_footer] = MadLUG
 variables[site_frontpage] = node/1
 variables[theme_settings][toggle_node_info_page] = 0
 
-; You may also want to set the clean url variable if you don't need clean urls. 
-; Since we bypassed the configuration screen, it is enabled by default, so to 
+; You may also want to set the clean url variable if you don't need clean urls.
+; Since we bypassed the configuration screen, it is enabled by default, so to
 ; disable it you'll want to uncomment this line:
 ; variables[clean_url] = 0
 

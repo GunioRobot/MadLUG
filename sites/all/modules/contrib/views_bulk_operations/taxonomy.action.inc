@@ -111,7 +111,7 @@ function views_bulk_operations_taxonomy_action_form($context) {
     '#type' => 'fieldset',
     '#title' => t('Vocabularies'),
     '#tree' => TRUE,
-  );  
+  );
   while (list(,$vocabulary) = each($vocabularies)) {
     $form['taxonomy'][$vocabulary->vid] = taxonomy_form($vocabulary->vid, isset($context['terms']) ? $context['terms'] : NULL);
     $form['taxonomy'][$vocabulary->vid]['#weight'] = $vocabulary->weight;
@@ -161,7 +161,7 @@ function _taxonomy_action_parse_terms($taxonomy) {
     }
     else if (!is_array($vocab)) {
       if (!empty($vocab)) $ret[] = $vocab;
-    } 
+    }
     else {
       while (list(,$tid) = each($vocab)) {
         if (!empty($tid)) $ret[] = $tid;
@@ -173,7 +173,7 @@ function _taxonomy_action_parse_terms($taxonomy) {
 
 function views_bulk_operations_taxonomy_action_submit($form, $form_state) {
   return array(
-    'do' => $form_state['values']['do'], 
+    'do' => $form_state['values']['do'],
     'terms' => _taxonomy_action_parse_terms($form_state['values']['taxonomy']),
   );
 }

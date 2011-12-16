@@ -62,5 +62,5 @@ function filefield_token_values($type, $object = NULL) {
       $tokens['filefield-extension'] = $info['extension'];
     }
   }
-  return $tokens;  
+  return $tokens;
 }

@@ -86,7 +86,7 @@ function views_bulk_operations_ruleset_action_form($context) {
     $form[$key] = array(
       '#type' => 'textarea',
       '#title' => $argument['label'],
-      '#description' => t('Argument of type %type. Enter PHP script that will return a value for this argument. 
+      '#description' => t('Argument of type %type. Enter PHP script that will return a value for this argument.
                            The variables <code>$object</code> and <code>$context</code> are available to this script.',
         array('%type' => $argument['type'])
       ),

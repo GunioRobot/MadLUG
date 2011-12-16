@@ -8,7 +8,7 @@
 
 /**
  * Implementation of hook_drush_command().
- * 
+ *
  * @See drush_parse_command() for a list of recognized keys.
  *
  * @return
@@ -147,7 +147,7 @@ function drush_features_export() {
     _drush_features_export($stub, $component);
   }
   elseif (count($args) > 1) {
-    // Assume that the user intends to create a new module based on a list of 
+    // Assume that the user intends to create a new module based on a list of
     // components. First argument is assumed to be the name.
     $name = array_shift($args);
     $stub = array();

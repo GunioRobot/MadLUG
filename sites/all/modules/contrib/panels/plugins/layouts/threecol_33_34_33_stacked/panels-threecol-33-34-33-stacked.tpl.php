@@ -22,7 +22,7 @@
   <?php if ($content['top']): ?>
     <div class="panel-panel panel-col-top">
       <div class="inside"><?php print $content['top']; ?></div>
-    </div>    
+    </div>
   <?php endif ?>
 
   <div class="center-wrapper">
@@ -42,6 +42,6 @@
   <?php if ($content['bottom']): ?>
     <div class="panel-panel panel-col-bottom">
       <div class="inside"><?php print $content['bottom']; ?></div>
-    </div>    
+    </div>
   <?php endif ?>
 </div>

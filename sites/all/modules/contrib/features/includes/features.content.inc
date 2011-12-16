@@ -149,7 +149,7 @@ function content_features_rebuild($module) {
     content_clear_type_cache(TRUE);
 
     foreach ($fields as $field) {
-      // We use content_field_instance_read() here so that we can get inactive 
+      // We use content_field_instance_read() here so that we can get inactive
       // fields too. We can't just pass $field to it as the fnc will add every
       // item of the array to the WHERE clause.
       $param = array('field_name' => $field['field_name'], 'type_name' => $field['type_name']);
@@ -168,7 +168,7 @@ function content_features_rebuild($module) {
       }
       else {
         // Summary: content_field_instance_create() will fall back to prior
-        // instance values for weight, label, desc if not set. 
+        // instance values for weight, label, desc if not set.
         // See http://drupal.org/node/686240#comment-2786162
         $field['weight'] = $field['widget']['weight'];
         $field['label'] = $field['widget']['label'];

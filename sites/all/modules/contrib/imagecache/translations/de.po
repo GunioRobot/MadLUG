@@ -517,28 +517,28 @@ msgid "The configuration data for the action."
 msgstr "Die Konfigurationsdaten für die Aktion."
 
 
-#: (duplicate) imagecache.install:15 ;22 ;29 
+#: (duplicate) imagecache.install:15 ;22 ;29
 msgid "ImageCache Directory"
 msgstr "ImageCache-Verzeichnis"
 
-#: (duplicate) imagecache.install:16 
+#: (duplicate) imagecache.install:16
 msgid "%p does not a directory or is not readable by the webserver."
 msgstr "%p ist kein Verzeichnis oder vom Webserver nicht lesbar."
 
 
-#: (duplicate) imagecache.install:23 ;40 
+#: (duplicate) imagecache.install:23 ;40
 msgid "%p is not writeable by the webserver."
 msgstr "%p ist nicht durch den Webserver schreibbar"
 
-#: (duplicate) imagecache.install:30 
+#: (duplicate) imagecache.install:30
 msgid "An unknown error occured."
 msgstr ""
 
-#: (duplicate) imagecache.install:31 
+#: (duplicate) imagecache.install:31
 msgid "An unknown error occured trying to verify %p is a directory and is writable."
 msgstr "Ein unbekannter Fehler ist aufgetreten bei der Überprüfung, ob %p ein Verzeichnis und schreibbar ist."
 
-#: (duplicate) imagecache.install:39 
+#: (duplicate) imagecache.install:39
 msgid "ImageCache Temp Directory"
 msgstr "Temporäres ImageCache-Verzeichnis"
 

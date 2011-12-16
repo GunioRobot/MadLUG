@@ -95,7 +95,7 @@ function draggableviews_book_draggableviews_style_plugin_form_alter(&$form, $for
 
 function draggableviews_book_draggableviews_style_plugin_render(&$form) {
   $header = drupal_render($form['draggableviews_book_header']);
-  
+
   $rows = array(
     array(drupal_render($form['draggableviews_book_radios'][0]), '&nbsp;'),
     array(drupal_render($form['draggableviews_book_radios'][1]), drupal_render($form['draggableviews_book_argument'])),

@@ -142,7 +142,7 @@ Added support for context keyword substitutions on override paths in content pan
 Introduce a "jump menu" tool which can be used to provide jump menus with a select.
 Change plugins to no longer need magic function. Can now use $plugin = array(...) instead.
 #652236 by alevine: Preserve pre-existing class when adding ajax functionality to form widgets.
-#657474: Allows clean exporting for task handlers set to be the homepage. 
+#657474: Allows clean exporting for task handlers set to be the homepage.
 #588246 by brynbellomy: Add "context exists" access plugin.
 #618194 by brynbellomy: Add "string length" access plugin.
 #618204 by brynbellomy: Add "string comparison" access plugin.
@@ -284,9 +284,9 @@ name, they would accidentally share data.
 #512048: by tom_o_t: Path fallback override callback had bad logic.
 
 IMPORTANT:
-Removed the delegator module entirely. There is now a page_manager module in 
-its place, with a vastly improved workflow and user interface. Activating it 
-should automatically update your data to the new module. However, PLEASE 
+Removed the delegator module entirely. There is now a page_manager module in
+its place, with a vastly improved workflow and user interface. Activating it
+should automatically update your data to the new module. However, PLEASE
 PLEASE PLEASE back up your data before using it. Just enough changed to make
 this a bit of a concern.
 

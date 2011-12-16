@@ -8,7 +8,7 @@ if (Drupal.jsEnabled) {
     if (selected.length) {
       var selAll = Drupal.t('Select All');
       var selNone = Drupal.t('Select None');
-      
+
       // Set up a prototype link and event handlers
       var link = $('<a class="bef-toggle" href="#">'+ selAll +'</a>')
       link.click(function() {
@@ -38,7 +38,7 @@ if (Drupal.jsEnabled) {
         // Clone the link prototype and insert into the DOM
         var newLink = link.clone(true);
         newLink.insertBefore($('.bef-checkboxes', this));
-        
+
         // If all checkboxes are already checked by default then switch to Select None
         if ($('input:checkbox:checked', this).length == $('input:checkbox', this).length) {
           newLink.click();

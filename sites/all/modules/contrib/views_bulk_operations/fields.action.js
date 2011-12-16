@@ -25,7 +25,7 @@ Drupal.behaviors.vbo_fieldsAction = function(context) {
       Drupal.vbo.fieldsAction.updateToggler(this, false);
     });
   });
-  
+
   // Disable all those whose checkboxes are off.
   $('.fields-action-togglable', context).each(function() {
     if ($('.fields-action-toggler', $(this).parents('tr:first')).attr('checked')) {

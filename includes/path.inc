@@ -25,7 +25,7 @@ function drupal_init_path() {
 /**
  * Given an alias, return its Drupal system URL if one exists. Given a Drupal
  * system URL return one of its aliases if such a one exists. Otherwise,
- * return FALSE. This function is a hook and modules can impliment lookup_path 
+ * return FALSE. This function is a hook and modules can impliment lookup_path
  * to override the core behavior.
  *
  * @param $action
@@ -43,11 +43,11 @@ function drupal_init_path() {
  * @return
  *   Either a Drupal system path, an aliased path, or FALSE if no path was
  *   found.
- *  
+ *
  */
 function drupal_lookup_path($action, $path = '', $path_language = '') {
   static $hook_module;
-  
+
   if (!isset($hook_module)) {
     $modules = module_implements('lookup_path');
     if (count($modules) > 0) {

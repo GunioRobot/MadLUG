@@ -1,8 +1,8 @@
 <?php
 // $Id: fields.action.inc,v 1.1.2.32 2010/07/17 15:30:47 kratib Exp $
 /**
- * @file Drupal action to set individual field values. 
- * 
+ * @file Drupal action to set individual field values.
+ *
  * Heavily "inspired" by fago's work in CCK on 'Populate a field' action (cck/includes/content.rules.inc).
  */
 
@@ -57,11 +57,11 @@ function views_bulk_operations_fields_action_form($context) {
   }
 
   foreach ($fields as $field) {
-    if (module_exists('content_permissions') && 
-        in_array('edit ' . $field['field_name'], module_invoke('content_permissions', 'perm')) && 
+    if (module_exists('content_permissions') &&
+        in_array('edit ' . $field['field_name'], module_invoke('content_permissions', 'perm')) &&
         !user_access('edit ' . $field['field_name'])) continue;
-    if (!empty($context['settings']['display_fields']) && 
-        !in_array($field['field_name'], $context['settings']['display_fields']) && 
+    if (!empty($context['settings']['display_fields']) &&
+        !in_array($field['field_name'], $context['settings']['display_fields']) &&
         !in_array(VBO_ACTION_FIELDS_ALL, $context['settings']['display_fields'])) continue;
 
     $form['#node']->{$field['field_name']} = NULL;
@@ -76,7 +76,7 @@ function views_bulk_operations_fields_action_form($context) {
     }
     if (!isset($form[$field['field_name']])) continue;
     $form['#field_info'][$field['field_name']] = $field;
-    
+
     // Adjust some settings on the field itself.
     $form[$field['field_name']]['#weight'] = $weight++;
     $form[$field['field_name']]['#prefix'] = '<div class="fields-action-togglable">' . @$form[$field['field_name']]['#prefix'];
@@ -88,8 +88,8 @@ function views_bulk_operations_fields_action_form($context) {
     // Checkbox to add/overwrite values in this field.
     if ($field['multiple']) {
       $form[$field['field_name'] . '_add'] = array(
-        '#type' => 'checkbox', 
-        '#prefix' => '<div class="fields-action-togglable">', 
+        '#type' => 'checkbox',
+        '#prefix' => '<div class="fields-action-togglable">',
         '#suffix' => '</div>',
         '#attributes' => array(
           'title' => t('Check this box to add new values to this multi-valued field, instead of overwriting existing values.'),
@@ -122,7 +122,7 @@ function views_bulk_operations_fields_action_form($context) {
                     "  // You'll usually want to stop here. Provide more values\n".
                     "  // if you want your 'default value' to be multi-valued:\n".
                     "  1 => array(\n    @columns\n  ),\n".
-                    "  2 => ...\n);", 
+                    "  2 => ...\n);",
                     array('@columns' => implode(",\n    ", $columns))
         );
       }
@@ -136,7 +136,7 @@ function views_bulk_operations_fields_action_form($context) {
         '#prefix' => '<div class="fields-action-togglable">',
         '#suffix' => '</div>',
       );
-    } 
+    }
   }
 
   // Special case for only one field: convert the checkbox into a value that's TRUE by default.
@@ -196,7 +196,7 @@ function theme_views_bulk_operations_fields_action_form($form) {
     if (!empty($form['#field_info'])) foreach ($form['#field_info'] as $field_name => $field) {
       $row = array(
         'class' => 'fields-action-row',
-        'id' => 'fields-action-row-' . str_replace('_', '-', $field_name), 
+        'id' => 'fields-action-row-' . str_replace('_', '-', $field_name),
         'data' => array(
           drupal_render($form[$field_name . '_check']),
           drupal_render($form[$field_name . '_add']),
@@ -208,7 +208,7 @@ function theme_views_bulk_operations_fields_action_form($form) {
       }
       $rows[] = $row;
     }
-    $output .= theme('table', $header, $rows); 
+    $output .= theme('table', $header, $rows);
   }
   $output .= drupal_render($form);
   return $output;

@@ -63,7 +63,7 @@ Drupal.vbo.startUp = function(context) {
     if (event.target.nodeName.toLowerCase() != 'input' && event.target.nodeName.toLowerCase() != 'a') {
       $(':checkbox.vbo-select', this).each(function() {
         var checked = this.checked;
-        // trigger() toggles the checkmark *after* the event is set, 
+        // trigger() toggles the checkmark *after* the event is set,
         // whereas manually clicking the checkbox toggles it *beforehand*.
         // that's why we manually set the checkmark first, then trigger the
         // event (so that listeners get notified), then re-set the checkmark

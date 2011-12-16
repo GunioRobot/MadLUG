@@ -387,7 +387,7 @@ function features_tar_create($name, $contents) {
     sprintf("%11s", decoct(time())) // Creation time
   );
   $binary_data_last = pack("a1a100a6a2a32a32a8a8a155a12", '', '', '', '', '', '', '', '', '', '');
-  
+
   $checksum = 0;
   for ($i = 0; $i < 148; $i++) {
     $checksum += ord(substr($binary_data_first, $i, 1));
@@ -398,11 +398,11 @@ function features_tar_create($name, $contents) {
   for ($i = 156, $j = 0; $i < 512; $i++, $j++) {
     $checksum += ord(substr($binary_data_last, $j, 1));
   }
-  
+
   $tar .= $binary_data_first;
   $tar .= pack("a8", sprintf("%6s ", decoct($checksum)));
   $tar .= $binary_data_last;
-  
+
   $buffer = str_split($contents, 512);
   foreach ($buffer as $item) {
     $tar .= pack("a512", $item);

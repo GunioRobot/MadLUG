@@ -126,7 +126,7 @@ function theme_filefield_file($file) {
 
   // Set options as per anchor format described at
   // http://microformats.org/wiki/file-format-examples
-  // TODO: Possibly move to until I move to the more complex format described 
+  // TODO: Possibly move to until I move to the more complex format described
   // at http://darrelopry.com/story/microformats-and-media-rfc-if-you-js-or-css
   $options = array(
     'attributes' => array(

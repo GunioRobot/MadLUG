@@ -117,7 +117,7 @@ msgstr "Votre installation contient un module qui n'existe plus. Lors de la mise
 msgid "The delegator module has been replaced by the Page Manager module. You should enable the page manager module to ensure that any panel pages you have will not be lost."
 msgstr "Le module delegator a été remplacé par le module Page Manager. Vous devriez activer le module page manager pour vous assurer que toutes les pages du panel ne soient pas perdues."
 
-#: (duplicate) panels.install:27 
+#: (duplicate) panels.install:27
 msgid "CTools API Version"
 msgstr "Version de l'API CTools"
 

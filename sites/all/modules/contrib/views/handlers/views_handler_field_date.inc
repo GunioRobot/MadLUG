@@ -50,7 +50,7 @@ class views_handler_field_date extends views_handler_field {
     if (in_array($format, array('custom', 'raw time ago', 'time ago', 'raw time span', 'time span'))) {
       $custom_format = $this->options['custom_date_format'];
     }
-    
+
     if (!$value) {
       return theme('views_nodate');
     }

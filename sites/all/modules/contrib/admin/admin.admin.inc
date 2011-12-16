@@ -4,7 +4,7 @@
 /**
  * System settings form for admin toolbar.
  */
-function admin_settings_form() {  
+function admin_settings_form() {
   $form['admin_toolbar'] = array(
     '#tree' => TRUE,
     '#theme' => 'admin_settings_form'

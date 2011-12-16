@@ -139,7 +139,7 @@ function db_set_active($name = 'default') {
         $slave_connect_url = $db_slave_url[$name][$slave_index];
       }
       else {
-        $slave_connect_url = $db_slave_url[$name];        
+        $slave_connect_url = $db_slave_url[$name];
       }
     }
     else {
@@ -149,7 +149,7 @@ function db_set_active($name = 'default') {
         $slave_connect_url = $db_slave_url[$slave_index];
       }
       else {
-        $slave_connect_url = $db_slave_url;        
+        $slave_connect_url = $db_slave_url;
       }
     }
 
@@ -165,7 +165,7 @@ function db_set_active($name = 'default') {
 
     $db_conns[$name] = db_connect($connect_url);
     if (!empty($slave_connect_url)) {
-      $db_slave_conns[$name] = db_connect($slave_connect_url); 
+      $db_slave_conns[$name] = db_connect($slave_connect_url);
     }
   }
 

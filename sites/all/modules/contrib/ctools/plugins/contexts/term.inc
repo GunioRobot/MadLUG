@@ -45,7 +45,7 @@ function ctools_context_create_term($empty, $data = NULL, $conf = FALSE) {
   if ($conf && isset($data['tid'])) {
     $data = taxonomy_get_term($data['tid']);
   }
-  
+
   if (!empty($data)) {
     $context->data        = $data;
     $context->title       = $data->name;

@@ -247,7 +247,7 @@ function hook_features_pipe_component_alter(&$pipe, $data, $export, $module_name
  *
  * CTools also has a variety of hook_FOO_alters.
  *
- * Note: While views is a component of features, it declares it's own alter 
+ * Note: While views is a component of features, it declares it's own alter
  * function which takes a similar form:
  * hook_views_default_views_alter(&$views)
  */
@@ -262,18 +262,18 @@ function hook_content_default_fields_alter(&$fields) {
 }
 
 /**
- * Alter the default fieldgroup groups right before they are cached into the 
+ * Alter the default fieldgroup groups right before they are cached into the
  * database.
  *
  * @param &$groups
- *   By reference. The fieldgroup groups that have been declared by another 
+ *   By reference. The fieldgroup groups that have been declared by another
  *   feature.
  */
 function hook_fieldgroup_default_groups_alter(&$groups) {
 }
 
 /**
- * Alter the default filter formats right before they are cached into the 
+ * Alter the default filter formats right before they are cached into the
  * database.
  *
  * @param &$formats

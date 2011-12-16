@@ -316,7 +316,7 @@ function user_views_data() {
 
   // ----------------------------------------------------------------------
   // authmap table
-  
+
   $data['authmap']['table']['group']  = t('User');
   $data['authmap']['table']['join'] = array(
      // Directly links to users table.
@@ -371,7 +371,7 @@ function user_views_data() {
       'handler' => 'views_handler_argument_string',
     ),
   );
-  
+
   return $data;
 }
 

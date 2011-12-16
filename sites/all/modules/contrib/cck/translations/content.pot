@@ -214,11 +214,11 @@ msgstr ""
 msgid "Some updates are still pending.<br/>Please re-run the update script."
 msgstr ""
 
-#: (duplicate) content.install:10 
+#: (duplicate) content.install:10
 msgid "CCK - No Views integration"
 msgstr ""
 
-#: (duplicate) content.install:11 
+#: (duplicate) content.install:11
 msgid "CCK integration with Views module requires Views 6.x-2.0-rc2 or greater."
 msgstr ""
 

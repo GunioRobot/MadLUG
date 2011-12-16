@@ -12,7 +12,7 @@ task handler definition:
     params: $handler, $task, $subtask_id
   save -- callback to call just prior to the task handler being saved so it can adjust its data.
     params: &$handler, $update (as drupal_write_record would receive)
-  export -- callback to call just prior to the task being exported. It should return text to append to the export if necessary. 
+  export -- callback to call just prior to the task being exported. It should return text to append to the export if necessary.
     params: &$handler, $indent
 
   forms => array(

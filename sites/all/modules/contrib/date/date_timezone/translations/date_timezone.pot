@@ -1581,23 +1581,23 @@ msgstr ""
 msgid "UTC"
 msgstr ""
 
-#: (duplicate) date_timezone/date_timezone.install:45 
+#: (duplicate) date_timezone/date_timezone.install:45
 msgid "The Date Timezone module requires you to !link."
 msgstr ""
 
-#: (duplicate) date_timezone/date_timezone.install:45 
+#: (duplicate) date_timezone/date_timezone.install:45
 msgid "set the site timezone name"
 msgstr ""
 
-#: (duplicate) date_timezone/date_timezone.install:51 
+#: (duplicate) date_timezone/date_timezone.install:51
 msgid "The !link may not be correct."
 msgstr ""
 
-#: (duplicate) date_timezone/date_timezone.install:51 
+#: (duplicate) date_timezone/date_timezone.install:51
 msgid "site timezone name"
 msgstr ""
 
-#: (duplicate) date_timezone/date_timezone.install:58 
+#: (duplicate) date_timezone/date_timezone.install:58
 msgid "Date Timezone requirements"
 msgstr ""
 

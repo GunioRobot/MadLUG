@@ -216,7 +216,7 @@ function context_features_revert($module = NULL) {
     foreach($default_contexts as $default_context) {
       $current_context = new StdClass();
       $current_context->namespace = $default_context['namespace'];
-      $current_context->attribute = $default_context['attribute'];  
+      $current_context->attribute = $default_context['attribute'];
       $current_context->value = $default_context['value'];
       $context_to_delete = context_load_context($current_context);
       context_delete_context($context_to_delete);

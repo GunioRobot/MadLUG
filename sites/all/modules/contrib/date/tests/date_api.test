@@ -11,7 +11,7 @@ class DateAPITestCase extends DrupalWebTestCase {
       'group' => t('Date'),
     );
   }
-  
+
   /**
    * Implementation of setUp().
    */
@@ -114,7 +114,7 @@ class DateAPITestCase extends DrupalWebTestCase {
       $this->assertEqual($date_api_format, $php_format, 'Test that the "' . $formatter . '" formatter is formatted correctly by date_format_date()');
     }
   }
-  
+
   /**
    * Implementation of tearDown().
    */

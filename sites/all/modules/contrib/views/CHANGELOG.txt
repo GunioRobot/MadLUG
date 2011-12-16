@@ -156,7 +156,7 @@ Views 2.8 (Dec 02, 2009)
     o #622608: Allow attachments to inherit pager data.
     o #495606 by Roi Danton and dereine: Introduce views_get_view_result() as a fast way to get just the results of a view.
     o #614040 by dereine: Introduce hook_views_plugins_alter()
-    
+
 Views 2.7 (Nov 02, 2009)
   Bug fixes:
     o Table style when not overriding sorts put sorts in wrong order.
@@ -327,7 +327,7 @@ Views 2.4 (Apr 7, 2009)
     o #364082 by hass: Unique key missing on views_view table.
     o #366250 by sirkitree: Fix deprecated jquery selectors so we can work with jquery 1.2.6 as well as 1.3.2.
     o #386986: 2 or more relationships could block a normal table from being added.
-    o #371219 by aclight: Incorrect logic in views_many_to_one_helper::ensure_my_table() 
+    o #371219 by aclight: Incorrect logic in views_many_to_one_helper::ensure_my_table()
     o #376570 by yhahn: Better AJAX scrolling.
     o #412576 by yhahn: Restore missing views_handler_filter_float class.
     o #378710: Add strip_tags() to path when displaying a field as a link as a path can never have HTML in it.
@@ -406,7 +406,7 @@ Views 2.3 (Feb 6, 2009)
     o #353002 by neclimdul: Provide a filter for user posted or commented on to complement the argument with the same functionality.
 
   2.3 API Notes:
-    A minor change in the API now requires that styles that render fields MUST 
+    A minor change in the API now requires that styles that render fields MUST
     render them in order, first by row and then by field ID. Not doing so will
     cause the token expansion to fail.
 

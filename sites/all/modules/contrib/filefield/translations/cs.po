@@ -404,27 +404,27 @@ msgstr "Přesouvám hodnoty pole souboru"
 msgid "The File field %field has been updated with new settings."
 msgstr "Do FileField pole %field byly uloženy nové hodnoty nastavení."
 
-#: (duplicate) filefield.install:62 ;67 ;72 
+#: (duplicate) filefield.install:62 ;67 ;72
 msgid "Not enabled"
 msgstr "Nepovoleno"
 
-#: (duplicate) filefield.install:63 
+#: (duplicate) filefield.install:63
 msgid "Your server is not capable of displaying file upload progress. File upload progress requires PHP 5.2 and an Apache server."
 msgstr "Váš server není schopen zobrazit ukazatel průběhu nahrávání souboru. Ukazatel vyžaduje PHP 5.2 a Apache server."
 
-#: (duplicate) filefield.install:68 
+#: (duplicate) filefield.install:68
 msgid "Your server is capable of displaying file upload progress through APC, but it is not enabled. Add <code>apc.rfc1867 = 1</code> to your php.ini configuration. Alternatively, it is recommended to use <a href=\"http://pecl.php.net/package/uploadprogress\">PECL uploadprogress</a>, which supports more than one simultaneous upload."
 msgstr "Váš server je schopen zobrazit ukazatel průběhu nahrávání souboru prostřednictvím APC, to ovšem není povoleno. Vložte <code>apc.rfc1867 = 1</code> do souboru nastavení php.ini. Je však doporučeno použít knihovnu <a href=\"http://pecl.php.net/package/uploadprogress\">PECL uploadprogress</a>, která podporuje více než jedno současné nahrávání."
 
-#: (duplicate) filefield.install:77 
+#: (duplicate) filefield.install:77
 msgid "Enabled (<a href=\"http://php.net/manual/en/apc.configuration.php#ini.apc.rfc1867\">APC RFC1867</a>)"
 msgstr "Povoleno (<a href=\"http://php.net/manual/en/apc.configuration.php#ini.apc.rfc1867\">APC RFC1867</a>)"
 
-#: (duplicate) filefield.install:82 
+#: (duplicate) filefield.install:82
 msgid "Enabled (<a href=\"http://pecl.php.net/package/uploadprogress\">PECL uploadprogress</a>)"
 msgstr "Povoleno (<a href=\"http://pecl.php.net/package/uploadprogress\">PECL uploadprogress</a>)"
 
-#: (duplicate) filefield.install:86 
+#: (duplicate) filefield.install:86
 msgid "Upload progress"
 msgstr "Ukazatel průběhu nahrávání"
 

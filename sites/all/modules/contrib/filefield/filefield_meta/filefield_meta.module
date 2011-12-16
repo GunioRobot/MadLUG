@@ -34,7 +34,7 @@ function filefield_meta_theme() {
 }
 
 /**
- * Implementation of hook_cron(). 
+ * Implementation of hook_cron().
  */
 function filefield_meta_cron() {
   $result = db_query('SELECT fm.fid FROM {filefield_meta} fm LEFT JOIN {files} f ON fm.fid=f.fid WHERE f.fid IS NULL');
@@ -121,11 +121,11 @@ function filefield_meta(&$file) {
     $file->data['duration'] = $info['playtime_seconds'];
   }
 
-  // Initialize fields. 
+  // Initialize fields.
   $file->data['audio_format'] = $file->data['audio_channel_mode'] = $file->data['audio_bitrate_mode'] = '';
   $file->data['audio_sample_rate'] = $file->data['audio_bitrate'] = 0;
- 
-  if (isset($info['audio']))  { 
+
+  if (isset($info['audio']))  {
     $file->data['audio_format'] = $info['audio']['dataformat']; //e.g. mp3
     $file->data['audio_sample_rate'] = $info['audio']['sample_rate']; //e.g. 44100
     $file->data['audio_channel_mode'] = $info['audio']['channelmode']; // e.g. mono
@@ -197,7 +197,7 @@ function theme_filefield_meta_duration($duration) {
 function theme_filefield_meta_samplerate($samplerate) {
   return t('@sampleratekHz', array('@samplerate' => (int) ($samplerate/1000)));
 }
- 
+
 /**
  * Formats audio bit rate.
  */

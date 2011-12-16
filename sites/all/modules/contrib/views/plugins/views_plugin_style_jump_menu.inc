@@ -66,7 +66,7 @@ class views_plugin_style_jump_menu extends views_plugin_style {
       '#title' => t('Button text'),
       '#default_value' => $this->options['text'],
     );
-    
+
     $form['choose'] = array(
       '#type' => 'textfield',
       '#title' => t('Choose text'),

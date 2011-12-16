@@ -28,7 +28,7 @@ function content_taxonomy_token_values($type, $object = NULL) {
     $items = $object;
     $terms = array();
     $tids = array();
-    
+
     foreach ($items as $item) {
       $tid = $item['value'];
       if ($tid) {

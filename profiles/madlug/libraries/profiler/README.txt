@@ -50,7 +50,7 @@ Summary of files:
 - `yourprofile.info`: info file containing the core definition of your install
   profile.
 - `yourprofile.profile`: contains snippet of code for initializing profiler.
-- `yourprofile.install`: optional file for defining custom code in 
+- `yourprofile.install`: optional file for defining custom code in
   `hook_install()`.
 
 

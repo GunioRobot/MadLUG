@@ -253,7 +253,7 @@ Version 6.2.0
 - #347080 Fix PHP4 southern timezone computation and New Zealand region.
 - #353327 Check for Event 2 timezone table before trying to use it.
 - #310633 Rework 'all day' logic to correctly handle increments.
-- #345953 Fix report of update failure from missing content_check_update() function. 
+- #345953 Fix report of update failure from missing content_check_update() function.
 - #348157 Beautiful new datepicker popup themes and images from hass. Thanks!
 - #357226 Don't translate menu items.
 - #357094 Remove extra parenthesis.
@@ -290,7 +290,7 @@ Version 6.2.0
 Version 6.2-rc6
 =================
 
-- #341202, #339457, #337952, #329128, #337787, #341203, Fix repeating and multiple date displays. 
+- #341202, #339457, #337952, #329128, #337787, #341203, Fix repeating and multiple date displays.
 - #273093 Add time formatter option to use in calendar views.
 - #324063 Unset invalid values in the date argument position of the url to avoid various errors in the date argument handling.
 - #301279 Remove README.txt for Date Popup, it's out of date and I'm moving documentation into the d.o handbook and Advanced Help.
@@ -408,7 +408,7 @@ Version 6.2-rc4
 - Clean out date displays in Views tables when uninstalled.
 - Fix undefined indexes in Date repeat widget logic.
 - Add in special widgets for repeating dates so normal widgets can use the regular Content module multiple values handling.
-- #309196, #310728 Get rid of attempt to simplify the navigation query, it is too easily broken. 
+- #309196, #310728 Get rid of attempt to simplify the navigation query, it is too easily broken.
 
 Version 6.2-rc3
 =================
@@ -442,9 +442,9 @@ Version 6.2-rc3
 - #297733 Make more kinds of custom formats display correctly.
 - Change date description for empty 'to' dates to only be used on date_select, the only place it will work.
 - Clean up Date Popup validation.
-- #275919, #267195 Clean up date_select validation: 
-    add field name to from and to date so the name can be used in error messages, 
-    combine error messages for field parts into a single message, 
+- #275919, #267195 Clean up date_select validation:
+    add field name to from and to date so the name can be used in error messages,
+    combine error messages for field parts into a single message,
     remove #options from text elements so we don't get meaningless core message about an invalid option,
     set error on whole element so error fields will get outlined.
 - Fix weights for timezone and repeat form to always keep them below the date.
@@ -521,7 +521,7 @@ Version 6.2-beta4
 - Don't use date_make_date() in date_convert() to avoid cyclical references.
 - Set a warning message for invalid non-required Date popup values instead of silently setting to NULL.
 - #244025 Fix jquery calendar so it works correctly with multiple value fields.
-- #269569 Make sure more than one date filter will work on the same view. 
+- #269569 Make sure more than one date filter will work on the same view.
 - Add a template for the Date Views filter form.
 - Check for invalid inputs to the date handler argument handling.
 - Move the class configuration to the theme so it is easier for themers.
@@ -575,14 +575,14 @@ Version 6.2-beta4
 - #270358 Fix handling of year-only or month-only text fields to save the right values.
 - Remove unneeded hook_form_alter() used to fix radio values for granularity.
 - Make sure granularity is in correct format before setting value in field settings form.
-- #244025 Didn't get the right code into the original commit for the single jquery class. 
+- #244025 Didn't get the right code into the original commit for the single jquery class.
     Still have the problem that it won't work with AHAH add more.
 - #273130 Conform to new Drupal 6 method of indicating long and short month names.
 - Clean up Date popup validation.
 - Add templates for ical vevent and valarm.
 - Fix undefined indexes in date_repeat_calc.inc.
-- Change method of showing multiple values with timezones on forms and show them in every instance. 
-  This is to simplify the processing and avoid errors when trying to apply the timezone in the 
+- Change method of showing multiple values with timezones on forms and show them in every instance.
+  This is to simplify the processing and avoid errors when trying to apply the timezone in the
   first item to all other items.
 - #272597 Remove php tag from timezone.js.
 - #272551 Add option to expand or collapse repeating date options.
@@ -596,7 +596,7 @@ Version 6.2-beta4
 - #260611 Replace substr with drupal_substr where used to get month and day abbreviations.
 - The granularity options were not saved correctly by CCK when provided as checkboxes, change them back to a select widget and fix the bad values in an update.
 - Have the date_text element handle its own format description instead of doing it in the Date module.
-- #270304 Timezone was not getting saved. 
+- #270304 Timezone was not getting saved.
 - Empty values were getting saved.
 - #257353 No need for format description when using select widget.
 - #270267 Auto-enable the Date PHP4 module when needed.
@@ -612,7 +612,7 @@ Version 6.2-beta3
 - Get rid of date_ical_export(). The ical export code has been moved into a template and pre_processor.
 - Make Date API changes needed to get iCal export working in Calendar.
 - #251830 Replace D5 function name with D6 function name, content_alter_db_field() is D5 only.
- 
+
 Version 6.2 beta2
 =================
 - Fix computation of week range computed from views arguments.
@@ -626,10 +626,10 @@ Version 6.2 beta2
 - Add theme folders to 6.2 branch.
 - #262272 Make sure $account is set before trying to use it in hook_user.
 - #263078 Fix error in setting up db session info that was triggering the MYSQL code for POSTGRES.
-- Move lots of similar date handling and navigation code out of Date and Calendar and into the Date API where we can use the same code everywhere. 
-- Add a flexible date argument to the API that will work on any Views date field and take any ISO date argument. 
-- Add an argument default option to set a missing date argument to the current date that will work on any date field. 
-- Add a date back/next navigation attachment that works with the date argument and which can be attached to any view. 
+- Move lots of similar date handling and navigation code out of Date and Calendar and into the Date API where we can use the same code everywhere.
+- Add a flexible date argument to the API that will work on any Views date field and take any ISO date argument.
+- Add an argument default option to set a missing date argument to the current date that will work on any date field.
+- Add a date back/next navigation attachment that works with the date argument and which can be attached to any view.
 - Adapt the Calendar module to share this code instead of creating its own.
 - Add calendar week calculations to the Date API so we can move them out of Calendar module to be able to use them in any date application.
 - Fix critical typo in date_get_timezone() that set the timezone to the site timezone even if it isn't right.
@@ -683,4 +683,3 @@ Version 6.2 beta
 - #225738 Add special case handling for year only or year and month only ISO dates.
 - #244025 make the jquery calendar code more efficient.
 
-  

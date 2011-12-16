@@ -17,14 +17,14 @@ sure "administer pathauto" is enabled through access control administration.
    For 6.x: Administer > Site building > URL alias > Automated alias settings
 
 **Transliteration support:
-If you desire transliteration support in the creation of URLs (e.g. the 
-replacement of Ã€ with A) then you will need to rename the file 
-i18n-ascii.example.txt to i18n-ascii.txt 
+If you desire transliteration support in the creation of URLs (e.g. the
+replacement of Ã€ with A) then you will need to rename the file
+i18n-ascii.example.txt to i18n-ascii.txt
 
-You can then freely edit the i18n-ascii.txt without worrying that your changes 
+You can then freely edit the i18n-ascii.txt without worrying that your changes
 will be over-written by upgrades of Pathauto.
 
-For details on how to transliterate any UTF8 character, please see the full 
+For details on how to transliterate any UTF8 character, please see the full
 i18n-ascii-fill.txt file information at http://drupal.org/node/185664
 
 **Upgrading from previous versions:

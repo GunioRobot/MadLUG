@@ -14,7 +14,7 @@ ctools_include('form');
 $output = ctools_build_form($form_id, $form_state);
 </pre>
 
-Previously, arguments to the form builder were passed into drupal_get_form; this is no longer true. You have two options for passing arguments to the form with ctools_build_form: set $form_state['args'] to an array which will then be passed to the builder as before. Or simply set $form_state values and refer to them in the builder. 
+Previously, arguments to the form builder were passed into drupal_get_form; this is no longer true. You have two options for passing arguments to the form with ctools_build_form: set $form_state['args'] to an array which will then be passed to the builder as before. Or simply set $form_state values and refer to them in the builder.
 
 <h3>Values you can set on $form_state</h3>
 

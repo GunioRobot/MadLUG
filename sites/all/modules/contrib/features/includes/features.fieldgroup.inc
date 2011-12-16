@@ -113,7 +113,7 @@ function fieldgroup_features_rebuild($module) {
 
       if (isset($groups[$group_name])) {
         $existing_group = $groups[$group_name];
-        // Only field names are exported in fieldgroup_features_export_render(), so we 
+        // Only field names are exported in fieldgroup_features_export_render(), so we
         // update the existing group to match.
         $existing_group['fields'] = array_keys($existing_group['fields']);
       }
@@ -131,7 +131,7 @@ function fieldgroup_features_rebuild($module) {
         // Look in the old group for any fields that have been removed.
         if ($existing_group && !empty($existing_group['fields'])) {
           foreach($existing_group['fields'] as $field_name) {
-            // We only want to update the field if the field no longer exists in the group 
+            // We only want to update the field if the field no longer exists in the group
             // and the field's existing group name matches the group currently being rebuilt.
             if (
               !in_array($field_name, $group['fields']) &&

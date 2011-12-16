@@ -172,54 +172,54 @@ msgstr "ImageMagickが返したエラー: %error"
 msgid "imageapi_imagemagick"
 msgstr "imageapi_imagemagick"
 
-#: (duplicate) imageapi.install:23 
+#: (duplicate) imageapi.install:23
 msgid "ImageAPI Toolkit"
 msgstr "画像APIツールキット"
 
-#: (duplicate) imageapi.install:24 
+#: (duplicate) imageapi.install:24
 msgid "No ImageAPI toolkits available"
 msgstr "利用可能な画像APIツールキットがありません。"
 
-#: (duplicate) imageapi.install:26 
+#: (duplicate) imageapi.install:26
 msgid "ImageAPI requires a Toolkit such as ImageAPI GD or ImageAPI ImageMagick to function. Goto !modules and enable one of them."
 msgstr ""
 "画像APIを動作させるには、画像API GDや画像API "
 "ImageMagikといったツールキットが必要となります。!modulesでそれらを有効にしてください。"
 
-#: (duplicate) imageapi_gd.install:12 ;23 
+#: (duplicate) imageapi_gd.install:12 ;23
 msgid "GD library"
 msgstr "GDライブラリ"
 
-#: (duplicate) imageapi_gd.install:13 ;33 
+#: (duplicate) imageapi_gd.install:13 ;33
 msgid "Not installed"
 msgstr "未インストール"
 
-#: (duplicate) imageapi_gd.install:15 
+#: (duplicate) imageapi_gd.install:15
 msgid "The GD library for PHP is missing or outdated. Please check the <a href=\"@url\">PHP image documentation</a> for information on how to correct this."
 msgstr ""
 "PHPのGDライブラリが見つからないか、または旧式です。 "
 "これを修正する方法についての情報は、<a "
 "href=\"@url\">PHPのイメージ関数リファレンス</a>を参照してください。"
 
-#: (duplicate) imageapi_gd.install:32 
+#: (duplicate) imageapi_gd.install:32
 msgid "GD !format Support"
 msgstr "GDの!formatサポート"
 
-#: (duplicate) imageapi_gd.install:35 
+#: (duplicate) imageapi_gd.install:35
 msgid "PHP GD was not compiled with %format support."
 msgstr ""
 "PHP "
 "GDが%formatのサポート付きでコンパイルされていません。"
 
-#: (duplicate) imageapi_gd.install:44 
+#: (duplicate) imageapi_gd.install:44
 msgid "GD Image Rotation"
 msgstr "GD画像回転"
 
-#: (duplicate) imageapi_gd.install:45 ;54 
+#: (duplicate) imageapi_gd.install:45 ;54
 msgid "Low Quality / Poor Performance"
 msgstr "低品質 / 低パフォーマンス"
 
-#: (duplicate) imageapi_gd.install:47 
+#: (duplicate) imageapi_gd.install:47
 msgid "The installed version of PHP GD does not support image rotations. It was probably compiled using the official GD libraries from http://www.libgd.org instead of the GD library bundled with PHP. You should recompile PHP --with-gd using the bundled GD library. See: @url. An implementation of imagerotate in PHP will used in the interim."
 msgstr ""
 "インストールされているPHP "
@@ -228,11 +228,11 @@ msgstr ""
 "のオプションつきでPHPをコンパイルしなおさなければなりません。参考: "
 "@url。それまでの間、PHPのimagerotate関数が用いられます。"
 
-#: (duplicate) imageapi_gd.install:53 
+#: (duplicate) imageapi_gd.install:53
 msgid "GD Image Filtering"
 msgstr "GD画像フィルタ"
 
-#: (duplicate) imageapi_gd.install:56 
+#: (duplicate) imageapi_gd.install:56
 msgid "The installed version of PHP GD does not support image filtering(desaturate, blur, negate, etc). It was probably compiled using the official GD libraries from http://www.libgd.org instead of the GD library bundled with PHP. You should recompile PHP --with-gd using the bundled GD library. See @url. An implementation of imagefilter in PHP will be used in the interim."
 msgstr ""
 "インストールされているPHP "
@@ -243,11 +243,11 @@ msgstr ""
 "のオプションつきでPHPをコンパイルしなおさなければなりません。参考: "
 "@url。それまでの間、PHPのimagefilter関数が用いられます。"
 
-#: (duplicate) imageapi_gd.install:64 
+#: (duplicate) imageapi_gd.install:64
 msgid "ImageAPI GD Memory Limit"
 msgstr "画像API GD メモリ制限"
 
-#: (duplicate) imageapi_gd.install:67 
+#: (duplicate) imageapi_gd.install:67
 msgid "It is highly recommended that you set you PHP memory_limit to 96M to use ImageAPI GD. A 1600x1200 images consumes ~45M of memory when decompressed and there are instances where ImageAPI GD is operating on two decompressed images at once."
 msgstr ""
 "画像API "

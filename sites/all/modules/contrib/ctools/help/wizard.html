@@ -81,20 +81,20 @@ Here is a full list of every item that can be in the form info array:
 <dd>A callback to display the rendered form via ajax. This is not required if using the modal tool, but is required otherwise since ajax by itself does not know how to render the results. Params: &$form_state, $output.</dd>
 <dt>finish callback</dt>
 <dd>
-The function to call when a form is complete and the finish button has been clicked. This function should finalize all data. Params: &$form_state. 
+The function to call when a form is complete and the finish button has been clicked. This function should finalize all data. Params: &$form_state.
 Defaults to $form_info['id']._finish if function exists.
 </dd>
 <dt>cancel callback</dt>
 <dd>
-The function to call when a form is canceled by the user. This function should clean up any data that is cached. Params: &$form_state. 
+The function to call when a form is canceled by the user. This function should clean up any data that is cached. Params: &$form_state.
 Defaults to $form_info['id']._cancel if function exists.</dd>
 <dt>return callback</dt>
 <dd>
-The function to call when a form is complete and the return button has been clicked. This is often the same as the finish callback. Params: &$form_state. 
+The function to call when a form is complete and the return button has been clicked. This is often the same as the finish callback. Params: &$form_state.
 Defaults to $form_info['id']._return if function exists.</dd>
 <dt>next callback</dt>
 <dd>
-The function to call when the next button has been clicked. This function should take the submitted data and cache it for later use by the finish callback. Params: &$form_state. 
+The function to call when the next button has been clicked. This function should take the submitted data and cache it for later use by the finish callback. Params: &$form_state.
 Defaults to $form_info['id']._next if function exists.</dd>
 <dt>order</dt>
 <dd>An optional array of forms, keyed by the step, which represents the default order the forms will be displayed in. If not set, the forms array will control the order. Note that submit callbacks can override the order so that branching logic can be used.</dd>
@@ -103,7 +103,7 @@ Defaults to $form_info['id']._next if function exists.</dd>
   <dl>
   <dt>form id</dt>
   <dd>
-    The id of the form, as used in the Drupal form system. This is also the name of the function that represents the form builder. 
+    The id of the form, as used in the Drupal form system. This is also the name of the function that represents the form builder.
     Defaults to $form_info['id']._.$step._form.
   </dd>
   <dt>include</dt>
@@ -282,7 +282,7 @@ function mymodule_init() {
   // if the path leads to the wizard
   if (drupal_match_path($_GET['q'], 'path/to/your/wizard/*')) {
     // set cache to false
-    $GLOBALS['conf']['cache'] = FALSE;   
+    $GLOBALS['conf']['cache'] = FALSE;
   }
 }
 </pre>

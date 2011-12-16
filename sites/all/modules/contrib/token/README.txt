@@ -17,7 +17,7 @@ a given page-view, and is pretty lightweight. It's nice. You'll like it.
 
 tokenSTARTER
 ============
-Want to add your own custom tokens to a site? Not sure how to write a 
+Want to add your own custom tokens to a site? Not sure how to write a
 module? Worry no more, it's now quite easy.
 
 1. Copy and rename the tokenSTARTER.info and tokenSTARTER.module replacing

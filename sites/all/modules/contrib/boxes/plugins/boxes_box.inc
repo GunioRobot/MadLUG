@@ -1,6 +1,6 @@
 <?php
 // $Id: boxes_box.inc,v 1.1.2.5 2010/08/04 14:38:02 yhahn Exp $
- 
+
 /**
  * Abstract base class defining a box. A boxes content plugin provides a
  * form of options for configuring content and renders content for display.
@@ -16,7 +16,7 @@ abstract class boxes_box {
   public $plugin_key;
   public $new;
   public $export_type;
- 
+
   /**
    * Load existing box by its unique identifier $delta.
    */
@@ -31,7 +31,7 @@ abstract class boxes_box {
     }
     return isset(self::$boxes[$delta]) ? self::$boxes[$delta] : NULL;
   }
- 
+
   /**
    * Instantiate, populate and return a box object.
    *
@@ -68,7 +68,7 @@ abstract class boxes_box {
     }
     return false;
   }
- 
+
   /**
    * Create a new box.
    */
@@ -76,10 +76,10 @@ abstract class boxes_box {
     $this->new = TRUE; // A box is new unless it exists in the DB or in code.
     $this->options = $this->options_defaults();
   }
- 
+
   /**
    * Reset the boxes cache.
-   * 
+   *
    * Both ctools and boxes current maintain caches, ctools of the config and
    * boxes of the loaded box objects. We clear them both.
    */
@@ -88,7 +88,7 @@ abstract class boxes_box {
     ctools_export_load_object_reset('box');
     self::$boxes = array();
   }
- 
+
   /**
    * Save a box.
    */
@@ -108,7 +108,7 @@ abstract class boxes_box {
     self::reset();
     module_exists('context') ? context_invalidate_cache() : NULL;
   }
- 
+
   /**
    * Delete a box.
    */
@@ -118,17 +118,17 @@ abstract class boxes_box {
     db_query("DELETE FROM {box} WHERE delta = '%s'", $this->delta);
     module_exists('context') ? context_invalidate_cache() : NULL;
   }
- 
+
   /**
    * Declare default options.
    */
   abstract public function options_defaults();
- 
+
   /**
    * Provide options to configure content.
    */
   abstract public function options_form();
- 
+
   /**
    * Render a block. Must return an array with the keys
    * 'delta', 'title', 'subject' (same as title) and 'content'.

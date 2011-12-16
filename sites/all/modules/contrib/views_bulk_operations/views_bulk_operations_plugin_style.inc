@@ -27,19 +27,19 @@ class views_bulk_operations_plugin_style extends views_plugin_style_table {
         '));
       }
     }
-  
-    return $options; 
+
+    return $options;
   }
 
   function options_form(&$form, &$form_state) {
     parent::options_form($form, $form_state);
-    
+
     $execution = array(
       VBO_EXECUTION_DIRECT => t('Invoke them directly'),
       VBO_EXECUTION_BATCH => t('Use Batch API'),
     );
     if (module_exists('job_queue')) {
-      $execution[VBO_EXECUTION_QUEUE] = t('Use <a href="@jobqueue">Job Queue</a>', array('@jobqueue' => url('http://drupal.org/project/job_queue'))); 
+      $execution[VBO_EXECUTION_QUEUE] = t('Use <a href="@jobqueue">Job Queue</a>', array('@jobqueue' => url('http://drupal.org/project/job_queue')));
     }
     $form['execution_type'] = array(
       '#type' => 'radios',
@@ -83,7 +83,7 @@ class views_bulk_operations_plugin_style extends views_plugin_style_table {
     $form['selected_operations'] = array(
       '#type' => 'checkboxes',
       '#title' => t('Selected operations'),
-      '#options' => $this->get_operations_options(), 
+      '#options' => $this->get_operations_options(),
       '#default_value' => $this->options['selected_operations'],
     );
 
@@ -171,7 +171,7 @@ class views_bulk_operations_plugin_style extends views_plugin_style_table {
     if (!$object_info) return $options;
     foreach ($this->all_operations as $key => $operation) {
       if ($operation['type'] == $object_info['type'] || $operation['type'] == 'system' || in_array($object_info['hook'], (array) $operation['hooks'])) {
-        $options[$key] = $operation['label'] .' ('. $key .')'; 
+        $options[$key] = $operation['label'] .' ('. $key .')';
       }
     }
     return $options;

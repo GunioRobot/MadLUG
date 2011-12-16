@@ -414,31 +414,31 @@ msgstr ""
 msgid "The file field %field has been updated with new settings."
 msgstr ""
 
-#: (duplicate) filefield.install:63 ;68 ;73 ;78 
+#: (duplicate) filefield.install:63 ;68 ;73 ;78
 msgid "Not enabled"
 msgstr ""
 
-#: (duplicate) filefield.install:64 
+#: (duplicate) filefield.install:64
 msgid "Your server is not capable of displaying file upload progress. File upload progress requires PHP 5.2 and an Apache server."
 msgstr ""
 
-#: (duplicate) filefield.install:69 
+#: (duplicate) filefield.install:69
 msgid "Your server is not capable of displaying file upload progress. File upload progress requires PHP be run with mod_php and not as FastCGI."
 msgstr ""
 
-#: (duplicate) filefield.install:74 
+#: (duplicate) filefield.install:74
 msgid "Your server is capable of displaying file upload progress through APC, but it is not enabled. Add <code>apc.rfc1867 = 1</code> to your php.ini configuration. Alternatively, it is recommended to use <a href=\"http://pecl.php.net/package/uploadprogress\">PECL uploadprogress</a>, which supports more than one simultaneous upload."
 msgstr ""
 
-#: (duplicate) filefield.install:83 
+#: (duplicate) filefield.install:83
 msgid "Enabled (<a href=\"http://php.net/manual/en/apc.configuration.php#ini.apc.rfc1867\">APC RFC1867</a>)"
 msgstr ""
 
-#: (duplicate) filefield.install:88 
+#: (duplicate) filefield.install:88
 msgid "Enabled (<a href=\"http://pecl.php.net/package/uploadprogress\">PECL uploadprogress</a>)"
 msgstr ""
 
-#: (duplicate) filefield.install:92 
+#: (duplicate) filefield.install:92
 msgid "Upload progress"
 msgstr ""
 

@@ -27,7 +27,7 @@
   <?php if ($content['top']): ?>
     <div class="panel-panel panel-col-top">
       <div class="inside"><?php print $content['top']; ?></div>
-    </div>    
+    </div>
   <?php endif ?>
 
   <?php if ($content['left_above'] || $content['right_above']): ?>
@@ -39,13 +39,13 @@
       <div class="panel-panel panel-col-last">
         <div class="inside"><?php print $content['right_above']; ?></div>
       </div>
-    </div>    
+    </div>
   <?php endif ?>
 
   <?php if ($content['middle']): ?>
     <div class="panel-panel panel-col-middle">
       <div class="inside"><?php print $content['middle']; ?></div>
-    </div>    
+    </div>
   <?php endif ?>
 
   <?php if ($content['left_below'] || $content['right_below']): ?>
@@ -57,12 +57,12 @@
       <div class="panel-panel panel-col-last">
         <div class="inside"><?php print $content['right_below']; ?></div>
       </div>
-    </div>    
+    </div>
   <?php endif ?>
 
   <?php if ($content['bottom']): ?>
     <div class="panel-panel panel-col-bottom">
       <div class="inside"><?php print $content['bottom']; ?></div>
-    </div>    
+    </div>
   <?php endif ?>
 </div>

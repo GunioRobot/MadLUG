@@ -156,7 +156,7 @@ msgstr ""
 msgid "The delegator module has been replaced by the Page Manager module. You should enable the page manager module to ensure that any panel pages you have will not be lost."
 msgstr ""
 
-#: (duplicate) panels.install:27 
+#: (duplicate) panels.install:27
 msgid "CTools API Version"
 msgstr ""
 

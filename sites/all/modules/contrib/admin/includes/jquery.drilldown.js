@@ -4,11 +4,11 @@
  * Generic menu drilldown plugin for standard Drupal menu tree markup.
  * The plugin should be inited against a DOM element that *contains*
  * a Drupal ul.menu tree. Example:
- * 
+ *
  *   $('div.block-menu').drilldown('init', params);
- * 
+ *
  * You must provide the following parameters as settings:
- * 
+ *
  *   var params = {
  *     activePath : A drupal menu path that is currently active including the basePath e.g. "/mysite/node"
  *     trail : A jquery selector to the DOM element that should act as the trail container, e.g. "div.my-menu-breadcrumb-trail"

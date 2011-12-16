@@ -501,7 +501,7 @@ class views_handler_field extends views_handler {
       $tokens = $this->get_render_tokens($alter);
       $value = $this->render_altered($alter, $tokens);
     }
- 
+
     if (!empty($alter['strip_tags'])) {
       $value = strip_tags($value);
     }

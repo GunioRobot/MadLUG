@@ -230,7 +230,7 @@ function _ctools_features_get_info($identifier = NULL, $reset = FALSE) {
       return $components[$identifier];
     }
     // New API identifier. Allows non-exportables related CTools APIs to be
-    // supported by an explicit `module:api:current_version` key. 
+    // supported by an explicit `module:api:current_version` key.
     else if (substr_count($identifier, ':') === 2) {
       list($module, $api, $current_version) = explode(':', $identifier);
       // If a schema component matches the provided identifier, provide that

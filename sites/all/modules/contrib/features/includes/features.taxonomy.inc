@@ -140,7 +140,7 @@ function _features_form_taxonomy_form_vocabulary_alter(&$form, &$form_state) {
     if ($k == 'name') {
       $new['module'] = $elem;
     }
-  } 
+  }
   $form['identification'] = $new;
 }
 

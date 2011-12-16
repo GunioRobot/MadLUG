@@ -32,12 +32,12 @@ function _features_install_menu() {
 
 /**
  * Update 6100: Set module on all feature node types to 'features'.
- 
- * This update can be re-run as needed to repair any node types that are not 
+
+ * This update can be re-run as needed to repair any node types that are not
  * removed after disabling the associated feature.
- * 
- * Any feature implementing a node component that was exported prior to this 
- * version of the features.module will need to have its 'module' declaration 
+ *
+ * Any feature implementing a node component that was exported prior to this
+ * version of the features.module will need to have its 'module' declaration
  * in hook_node_info() changed from 'node' to 'features'.
  */
 function features_update_6100() {

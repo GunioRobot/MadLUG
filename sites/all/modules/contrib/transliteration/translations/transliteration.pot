@@ -119,7 +119,7 @@ msgstr ""
 msgid "transliteration"
 msgstr ""
 
-#: (duplicate) transliteration.install:24 
+#: (duplicate) transliteration.install:24
 msgid "Transliteration has been installed. <a href=\"@transliteration-url\">Fix existing file names</a>."
 msgstr ""
 
